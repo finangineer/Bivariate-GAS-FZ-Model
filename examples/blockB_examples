@@ -1,0 +1,10 @@
+result_blockB_sp_ftse <- run_blockB_model("^GSPC", "^FTSE", "2015-01-01", "2022-12-31", 0.5, 0.5, 0.05, maxeval=8000)
+result_blockB_sp_n225 <- run_blockB_model("^GSPC", "^N225", "2015-01-01", "2022-12-31", 0.5, 0.5, 0.05, maxeval=12000)
+result_blockB_ft_fchi <- run_blockB_model("^FTSE", "^FCHI", "2015-01-01", "2022-12-31", 0.5, 0.5, 0.05, maxeval=8000)
+result_blockB_ft_n225 <- run_blockB_model("^FTSE", "^N225", "2015-01-01", "2022-12-31", 0.5, 0.5, 0.05, maxeval=8000)
+
+
+result_blockB_sp_ftse$summary()
+result_blockB_sp_n225$summary()
+result_blockB_ft_fchi$summary()
+result_blockB_ft_n225$summary()
