@@ -1,0 +1,7 @@
+result_diag_3asset <- run_diag_3asset_model(
+  ticker1 = "^GSPC", ticker2 = "^FTSE", ticker3 = "^N225",
+  start_date = "2015-01-01", end_date = "2022-12-31",
+  w1 = 0.4, w2 = 0.3, w3 = 0.3, alpha = 0.05, maxeval = 15000
+)
+
+result_diag_3asset$summary()
