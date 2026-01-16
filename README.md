@@ -1,13 +1,26 @@
 # Bivariate-GAS-FZ-Model
-This repository provides to code used in the article for Bivariate GAS-FZ Model. 
-# Replication code: Bivariate GAS–FZ Models for Portfolio Risk Management
 
-This repository contains the R code used to produce the empirical results, tables, and figures in the manuscript.
+This repository contains the R code used to reproduce the empirical results in the manuscript of Bivariate GAS–FZ models for portfolio VaR/ES forecasting.
 
-## How to run
-1. Install required R packages (see script headers).
-2. Run scripts in the recommended order (or run `run_all.R` if provided).
+## Repository structure
+
+- `R/` : core functions (data loading, loss functions, forecasting, runners, plotting)
+- `examples/` : runnable replication scripts (end-to-end examples)
+- `README.md` : instructions
 
 ## Data
-Price data are downloaded from Yahoo Finance by the scripts (no raw data are stored here).
+
+Price data are downloaded from Yahoo Finance via `quantmod::getSymbols()` (no raw data are stored in this repository).
+Because Yahoo Finance data can be revised, results may differ slightly over time.
+
+## Requirements
+
+### R packages
+The code uses (at minimum):
+- `quantmod`, `nloptr`, `zoo`, `rugarch`
+- `PerformanceAnalytics` (for `VaRTest`, if not already installed)
+
+Install packages in R:
+```r
+install.packages(c("quantmod","nloptr","zoo","rugarch","PerformanceAnalytics"))
 
