@@ -1,6 +1,6 @@
 # Bivariate-GAS-FZ-Model
 
-This repository contains the R code used to reproduce the empirical results in the manuscript of Bivariate GAS–FZ models for portfolio VaR/ES forecasting.
+This repository contains the R code used to reproduce the empirical results in the article of Bivariate GAS–FZ models for portfolio VaR/ES forecasting.
 
 ## Repository structure
 
